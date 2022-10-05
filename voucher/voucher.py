@@ -15,11 +15,10 @@ while i < 50000:
     
     if any(ele in code for ele in unwanted):
         pass
+    elif code in codes:
+        pass
     else:
-        if code in codes:
-            pass
-        else:
-            codes.extend([code])
-            i += 1
+        codes.extend([code])
+        i += 1
 
 print(codes)
