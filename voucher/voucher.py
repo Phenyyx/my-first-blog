@@ -12,7 +12,7 @@ while i < 50000:
     v = random.choice('ABCDEFGHJKLMNPQRSTUVWXYZ')
 
     code = x + y + z + w + v
-    
+
     if any(ele in code for ele in unwanted):
         pass
     elif code in codes:
