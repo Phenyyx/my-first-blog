@@ -22,3 +22,11 @@ while i < 50000:
         i += 1
 
 print(codes)
+
+try:
+    f = open("codes.txt", "wt")
+    for code in codes:
+        f.write(code+"\n")
+    f.close()
+except BaseException as err:
+    print("Error!", err)
