@@ -21,8 +21,6 @@ while i < 50000:
         codes.extend([code])
         i += 1
 
-print(codes)
-
 try:
     f = open("codes.txt", "wt")
     for code in codes:
